@@ -8,15 +8,15 @@ let package = Package(
         .library(
             name: "KSCrash",
             targets: [
-                "KSCrash/Installations",
-                "KSCrash/Recording",
-                "KSCrash/Recording/Monitors",
-                "KSCrash/Recording/Tools",
-                "KSCrash/Reporting/Filters",
-                "KSCrash/Reporting/Filters/Tools",
-                "KSCrash/Reporting/Tools",
-                "KSCrash/Reporting/Sinks",
-                "KSCrash/swift/Basic"
+                "KSCrashInstallations",
+                "KSCrashRecording",
+                "KSCrashRecordingMonitors",
+                "KSCrashRecordingTools",
+                "KSCrashReportingFilters",
+                "KSCrashReportingFiltersTools",
+                "KSCrashReportingTools",
+                "KSCrashReportingSinks",
+                "KSCrashSwiftBasic"
             ]
         )
     ],
@@ -24,7 +24,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "KSCrash/Installations",
+            name: "KSCrashInstallations",
             path: "Source/KSCrash/Installations",
             publicHeadersPath: ".",
             cxxSettings: [
@@ -37,7 +37,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Recording",
+            name: "KSCrashRecording",
             path: "Source/KSCrash/Recording",
             exclude: [
                 "Monitors",
@@ -54,7 +54,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Recording/Monitors",
+            name: "KSCrashRecordingMonitors",
             path: "Source/KSCrash/Recording/Monitors",
             publicHeadersPath: ".",
             cxxSettings: [
@@ -65,7 +65,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Recording/Tools",
+            name: "KSCrashRecordingTools",
             path: "Source/KSCrash/Recording/Tools",
             publicHeadersPath: ".",
             cxxSettings: [
@@ -78,7 +78,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Reporting/Filters",
+            name: "KSCrashReportingFilters",
             path: "Source/KSCrash/Reporting/Filters",
             exclude: [
                 "Tools"
@@ -92,7 +92,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Reporting/Filters/Tools",
+            name: "KSCrashReportingFiltersTools",
             path: "Source/KSCrash/Reporting/Filters/Tools",
             publicHeadersPath: ".",
             cxxSettings: [
@@ -100,7 +100,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Reporting/Tools",
+            name: "KSCrashReportingTools",
             path: "Source/KSCrash/Reporting/Tools",
             publicHeadersPath: ".",
             cxxSettings: [
@@ -109,7 +109,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/Reporting/Sinks",
+            name: "KSCrashReportingSinks",
             path: "Source/KSCrash/Reporting/Sinks",
             publicHeadersPath: ".",
             cxxSettings: [
@@ -122,7 +122,7 @@ let package = Package(
             ]
         ),
         .target(
-            name: "KSCrash/swift/Basic",
+            name: "KSCrashSwiftBasic",
             path: "Source/KSCrash/swift/Basic",
             publicHeadersPath: ".",
             cxxSettings: [
